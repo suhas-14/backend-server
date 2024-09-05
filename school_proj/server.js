@@ -3,7 +3,7 @@ const app = express()
 let studentArray = require("./initialData")
 
 //middleware
-app.use(express.json)
+app.use(express.json())
 
 app.get("/api/student", (req, res)=>{
     res.send(studentArray)
